@@ -1,6 +1,6 @@
 # Workshop 1: Introduction to Web Development
 
-Learn to build websites with HTML, CSS, and JavaScript
+Learn to build websites with HTML, CSS, and JavaScript!
 
 ---
 
@@ -30,6 +30,8 @@ Here is an example of a simple HTML document:
 ```
 
 Paste this snippet of HTML into the provided `index.html` file and view the file in your browser. You can do this by copying the absolute file path of the file and pasting it into your browser's address bar.
+
+Alternatively, you can use the VS Code extension **Live Server** and open the file with Live Server, which will open the file in your browser.
 
 You should see the text "Hello, World!" on the page.
 
@@ -98,12 +100,44 @@ Finally, in the `<body>` tag, we have a Heading 1 tag, or `<h1>`. You'll learn m
 
 ### Text
 
-TODO
+#### Headings
+HTML provides six levels of headings, from `<h1>` (the largest) to `<h6>` (the smallest):
 
-- Heading tags
-- Paragraph tags
+```html
+<h1>Main Heading</h1>
+<h2>Subheading</h2>
+<h3>Smaller Heading</h3>
+```
+
+#### Paragraphs
+Paragraphs are defined using the `<p>` tag:
+```html
+<p>This is a paragraph of text.</p>
+```
 
 ### Lists
+HTML supports two types of lists:
+
+#### Ordered Lists
+An ordered list `<ol>` displays items `<li>` with numbers:
+
+```html
+<ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+```
+
+#### Unordered Lists
+An unordered list `<ul>` displays items `<li>` with bullet points:
+```html
+<ul>
+    <li>Item one</li>
+    <li>Item two</li>
+    <li>Item three</li>
+</ul>
+```
 
 ### Links and Images
 
