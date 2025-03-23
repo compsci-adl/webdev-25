@@ -35,6 +35,9 @@ Alternatively, you can use the VS Code extension **Live Server** and open the fi
 
 You should see the text "Hello, World!" on the page.
 
+
+When creating your HTML files, it's important to name your main file `index.html`. This is a convention used by web servers to serve the default page when a directory is accessed. For example, when you visit `http://example.com/`, the server looks for a file named `index.html` in the root directory to display.
+
 But what do these elements mean? Let's break it down.
 
 ### Starting your HTML document
@@ -141,13 +144,110 @@ An unordered list `<ul>` displays items `<li>` with bullet points:
 
 ### Links and Images
 
+#### Links
+Links are created using the `<a>` tag. The `href` attribute specifies the URL of the page the link goes to:
+
+```html
+<a href="https://www.example.com">Visit Example.com</a>
+```
+
+#### Images
+Images are embedded using the `<img>` tag. The `src` attribute specifies the path to the image, and the `alt` attribute provides alternative text for the image:
+
+```html
+<img src="path/to/image.jpg" alt="Description of image">
+```
+
 ### Inputs
 
-### Page Layout
+HTML forms allow users to input data. The `<input>` tag is used to create various types of input fields:
+
+```html
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    
+    <input type="submit" value="Submit">
+</form>
+```
+### Divs and Spans
+
+#### Divs
+The `<div>` tag is a block-level element used to group other elements together. It is often used for styling purposes with CSS or for scripting with JavaScript.
+
+```html
+<div>
+    <h2>Title</h2>
+    <p>Some content goes here.</p>
+</div>
+```
+
+#### Spans
+The `<span>` tag is an inline element used to group text or other inline elements. It is typically used for styling a part of the text.
+
+```html
+<p>This is a <span style="color: red;">red</span> word.</p>
+```
+
+### Block and Inline Elements
+
+#### Block Elements
+Block elements take up the full width available and start on a new line. Examples include `<div>`, `<h1>`, `<p>`, and `<section>`.
+
+```html
+<div>
+    <h2>Block Element Example</h2>
+    <p>This is a block element.</p>
+</div>
+```
+
+#### Inline Elements
+Inline elements only take up as much width as necessary and do not start on a new line. Examples include `<span>`, `<a>`, and `<img>`.
+
+```html
+<p>This is an <span>inline</span> element.</p>
+```
+
+### Semantic HTML
+
+Semantic HTML introduces meaning to the web page rather than just presentation. These elements help with accessibility, SEO, and code readability.
+
+```html
+<header>
+    <h1>Page Title</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Section Title</h2>
+        <p>Some content goes here.</p>
+    </section>
+    
+    <article>
+        <h2>Article Title</h2>
+        <p>Article content goes here.</p>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2025 Your Name</p>
+</footer>
+```
+
+These elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>`) provide a clearer structure for your HTML documents.
 
 ---
-
-TODO: introduce web servers later, talk about importance of naming it 'index.html'
 
 ## CSS
 
