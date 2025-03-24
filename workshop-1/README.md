@@ -31,7 +31,7 @@ Here is an example of a simple HTML document:
 
 Paste this snippet of HTML into the provided `index.html` file and view the file in your browser. You can do this by copying the absolute file path of the file and pasting it into your browser's address bar.
 
-Alternatively, you can use the VS Code extension **Live Server** and open the file with Live Server, which will open the file in your browser.
+Alternatively, you can use the VS Code extension **Live Server** and open the file with Live Server, which will open the file in your browser. This also saves you from having to refresh the page on update manually as Live Server automatically does it for you!
 
 You should see the text "Hello, World!" on the page.
 
