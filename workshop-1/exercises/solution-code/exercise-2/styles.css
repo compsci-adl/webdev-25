@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f5f5f5;
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Headings */
+h1 {
+	color: #5d4037;
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #7cb342;
+	text-align: center;
+}
+
+h2 {
+	color: #33691e;
+	font-size: 1.8rem;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	border-left: 4px solid #5d4037;
+}
+
+#about {
+	margin-bottom: 20px;
+	font-size: 1.1rem;
+}
+
+a {
+	color: #1565c0;
+	text-decoration: none;
+}
+a:hover {
+	color: #0d47a1;
+	text-decoration: underline;
+}
+
+/* Lists */
+h2 + ul {
+	background-color: #e0e0e0;
+	padding: 15px;
+	border-radius: 5px;
+	list-style-type: none;
+}
+
+#content {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+/* Image */
+img {
+	max-width: 100%;
+	height: auto;
+	border: 3px solid #5d4037; /* Brown border */
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+	body {
+		padding: 10px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+}
