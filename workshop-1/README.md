@@ -251,4 +251,86 @@ These elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<f
 
 ## CSS
 
+### What is CSS?
+
+CSS stands for Cascading Style Sheets. It can be thought of as how we customise the appearance of the basic structures defined in the corresponding HTML sheet.
+
+### Selector
+
+#### Class
+
+```css
+.class {
+	/* Your styles go here */
+}
+```
+
+Given to multiple tags, meaning multiple elements can be selected
+
+#### ID
+
+```css
+#id {
+	/* Your styles go here */
+}
+```
+
+Meant to be unique, meaning you should only assign one element to a particular id
+
+#### Element
+
+```css
+div {
+	/* Your styles go here */
+}
+```
+
+### Colours
+
+```css
+h1 {
+	color: white; /* Text colour */
+	background: #fb2c36;
+}
+```
+
+Types:
+
+- Named colours
+- Hexadecimal colours
+- RGB colours
+- etc.
+
+### Styling Text
+
+```css
+p {
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	text-decoration: underline;
+	fonts-style: italic;
+	/* etc. */
+}
+```
+
+### Box Model
+
+- Margin
+- Border
+- Padding
+- Content
+
+### Layout Basics
+
+- Flex: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+- Grid: <https://css-tricks.com/snippets/css/complete-guide-grid/>
+
+### Read More
+
+- Naming conventions: <https://getbem.com/naming/>
+- CSS Tricks: <https://css-tricks.com/>
+- Tailwind CSS: <https://tailwindcss.com/>
+
 ## JavaScript
