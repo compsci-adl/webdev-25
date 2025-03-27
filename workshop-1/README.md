@@ -449,7 +449,7 @@ console.log(greet("Alice"));
 ```
 
 ### Promises
-Promises are used to handle asynchronous operations in JavaScript. They are like a guaranteed that something will happen in the future. Promises can either be pending, fulfilled, or rejected.
+Promises are used to handle asynchronous operations in JavaScript. They are like a guarantee that something will happen in the future. Promises can either be pending, fulfilled, or rejected.
 
 ```javascript
 let promise = new Promise((resolve, reject) => {
@@ -474,7 +474,7 @@ promise.then((message) => {
 ```
 
 ### Fetch API
-The Fetch API goes well with promises, fetched can return a promise that you can wait for.
+The Fetch API goes well with promises, Fe can return a promise that you can wait for.
 ```javascript
 fetch("https://api.example.com/data")
     .then(response => response.json())
