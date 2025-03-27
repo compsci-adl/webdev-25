@@ -7,8 +7,8 @@ We will create a simple personal profile website using HTML.
 Open a text editor of your choice, create a new empty directory, and navigate to it. Then create a file called `index.html`.
 
 ```shell
-mkdir workshop-1/exercises/exercise-1
-cd workshop-1/exercises/exercise-1
+mkdir workshop-1/exercises/code
+cd workshop-1/exercises/code
 touch index.html
 ```
 
