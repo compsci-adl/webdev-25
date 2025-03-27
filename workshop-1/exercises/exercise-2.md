@@ -79,7 +79,7 @@ Let's improve the styling of the body by changing the font family for the entire
   - To make text smaller
 </details>
 
-### 1. Heading Styles
+### 2. Heading Styles
 
 Let's style the main and section headings by using distinct colors, sizes, and borders to create a clear visual hierarchy and improve readability.
 
@@ -88,10 +88,10 @@ Let's style the main and section headings by using distinct colors, sizes, and b
 
   What does the color `#5d4037` represent in the main heading (`h1`)?
   
-  - A shade of **blue**
-  - A shade of **brown**
-  - A shade of **green**
-  - A shade of **red**
+  - A shade of blue
+  - A shade of brown
+  - A shade of green
+  - A shade of red
 </details>
 
 <details>
@@ -99,10 +99,10 @@ Let's style the main and section headings by using distinct colors, sizes, and b
 
   Why is there a `border-bottom: 3px solid #7cb342;` applied to `h1`?
   
-  - To add a **decorative underline effect**
-  - To increase the **font size**
-  - To make the text **bold**
-  - To **remove spacing** between elements
+  - To add a decorative underline effect
+  - To increase the font size
+  - To make the text bold
+  - To remove spacing between elements
 </details>
 
 <details>
@@ -110,10 +110,10 @@ Let's style the main and section headings by using distinct colors, sizes, and b
 
   What is the color `#33691e` used for in `h2`?
   
-  - The **text color** of section headings  
-  - The **background color** of section headings  
-  - The **border color** of section headings  
-  - The **padding color** of section headings  
+  - The text color of section headings  
+  - The background color of section headings  
+  - The border color of section headings  
+  - The padding color of section headings  
 </details>
 
 <details>
@@ -121,10 +121,10 @@ Let's style the main and section headings by using distinct colors, sizes, and b
 
   What effect does `border-left: 4px solid #5d4037;` have on `h2`?
   
-  - Adds a **vertical left border** for emphasis  
-  - Changes the **text alignment**  
-  - Increases the **font size**  
-  - Makes the heading **italic**
+  - Adds a vertical left border for emphasis  
+  - Changes the text alignment  
+  - Increases the font size  
+  - Makes the heading italic
 </details>
 
 <details>
@@ -132,10 +132,10 @@ Let's style the main and section headings by using distinct colors, sizes, and b
 
   Why is the `font-size` of `h1` larger than `h2`?
   
-  - To create a **clear visual hierarchy**  
-  - To **make h2 more readable**  
-  - To **align h1 to the left**  
-  - To **change the font style**
+  - To create a clear visual hierarchy  
+  - To make h2 more readable  
+  - To align h1 to the left  
+  - To change the font style
 </details>
 
 ### 3. Paragraph Styling
@@ -146,10 +146,10 @@ Now it's time to add a margin and font size for the about section.
 
   The `#about` selector is targeting which type of element?  
 
-  - An **ID** (`#about`)  
-  - A **class** (`.about`)  
-  - An **HTML element** (`about`)  
-  - A **pseudo-class** (`:about`)  
+  - An ID (`#about`)  
+  - A class (`.about`)  
+  - An HTML element (`about`)  
+  - A pseudo-class (`:about`)  
 </details>
 
 ### 4. Link Styling
@@ -174,10 +174,10 @@ Now we'll style the lists for better visual hierarchy. We can use flex to center
 
   What does `h2 + ul` target in CSS?  
 
-  - **All `ul` elements on the page**  
-  - **Only the first `ul` that directly follows an `h2`**  
-  - **Every `ul` inside an `h2`**  
-  - **All `h2` and `ul` elements**  
+  - All `ul` elements on the page  
+  - Only the first `ul` that directly follows an `h2`  
+  - Every `ul` inside an `h2`  
+  - All `h2` and `ul` elements  
 </details>
 
 <details>
@@ -185,10 +185,10 @@ Now we'll style the lists for better visual hierarchy. We can use flex to center
 
   What does `display: flex;` do for the `#content` section?  
 
-  - **Aligns child elements in a flexible layout**  
-  - **Changes text color**  
-  - **Adds padding to the container**  
-  - **Increases the font size**  
+  - Aligns child elements in a flexible layout  
+  - Changes text color  
+  - Adds padding to the container  
+  - Increases the font size  
 </details>
 
 <details>
@@ -196,10 +196,10 @@ Now we'll style the lists for better visual hierarchy. We can use flex to center
 
   What does `justify-content: center;` do inside `#content`?  
 
-  - **Centers child elements horizontally**  
-  - **Aligns child elements to the left**  
-  - **Adds space between elements vertically**  
-  - **Changes text alignment**  
+  - Centers child elements horizontally  
+  - Aligns child elements to the left  
+  - Adds space between elements vertically  
+  - Changes text alignment  
 </details>
 
 <details>
@@ -207,10 +207,10 @@ Now we'll style the lists for better visual hierarchy. We can use flex to center
 
   What does `gap: 1rem;` control in `#content`?  
 
-  - **Spacing between child elements**  
-  - **Padding inside the container**  
-  - **Margin around the container**  
-  - **Border thickness**  
+  - Spacing between child elements  
+  - Padding inside the container  
+  - Margin around the container  
+  - Border thickness  
 </details>
 
 
@@ -223,10 +223,10 @@ The image seems too big, let's fix it by making the image adjust its size respon
 
   What does `max-width: 100%;` do for images?  
 
-  - **Makes the image scale down within its container**  
-  - **Increases the image size beyond its original dimensions**  
-  - **Fixes the image width to 100px**  
-  - **Removes the image border**  
+  - Makes the image scale down within its container  
+  - Increases the image size beyond its original dimensions  
+  - Fixes the image width to 100px  
+  - Removes the image border  
 </details>
 
 ### 7. Responsive Design
@@ -237,10 +237,10 @@ Since websites can be accessed on anything, including desktops and mobile phones
 
   What does the `@media (max-width: 600px)` rule do?  
 
-  - **Applies styles only when the screen width is 600px or smaller**  
-  - **Changes the background color of the page**  
-  - **Adds a border around the body**  
-  - **Increases font sizes on smaller screens**  
+  - Applies styles only when the screen width is 600px or smaller  
+  - Changes the background color of the page  
+  - Adds a border around the body  
+  - Increases font sizes on smaller screens  
 </details>
 
 <details>
@@ -248,8 +248,8 @@ Since websites can be accessed on anything, including desktops and mobile phones
 
   Why do we adjust the font size inside the media query for smaller screens?  
 
-  - **To make the text more readable on smaller devices**  
-  - **To change the background color**  
-  - **To make text bold**  
-  - **To increase padding on larger screens**  
+  - To make the text more readable on smaller devices  
+  - To change the background color  
+  - To make text bold  
+  - To increase padding on larger screens  
 </details>

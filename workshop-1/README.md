@@ -493,3 +493,4 @@ fetch("https://api.example.com/data")
     });
 ```
 
+We will discuss more about promises and the Fetch API in our Intro to React workshop.
