@@ -255,9 +255,17 @@ These elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<f
 
 CSS stands for Cascading Style Sheets. It can be thought of as how we customise the appearance of the basic structures defined in the corresponding HTML sheet.
 
+### Where to put CSS?
+There are many styles that can be used to customise the HTML content. Like key-value pairs, a "property" followed by its value.
+
+```css
+color: yellow;
+```
+
 ### Selector
 
 #### Class
+Given to multiple tags, meaning multiple elements can be selected.
 
 ```css
 .class {
@@ -265,9 +273,8 @@ CSS stands for Cascading Style Sheets. It can be thought of as how we customise 
 }
 ```
 
-Given to multiple tags, meaning multiple elements can be selected
-
 #### ID
+Meant to be unique, meaning you should only assign one element to a particular id.
 
 ```css
 #id {
@@ -275,9 +282,8 @@ Given to multiple tags, meaning multiple elements can be selected
 }
 ```
 
-Meant to be unique, meaning you should only assign one element to a particular id
-
 #### Element
+Applies the styling to all elements of the same type.
 
 ```css
 div {
@@ -290,7 +296,8 @@ div {
 ```css
 h1 {
 	color: white; /* Text colour */
-	background: #fb2c36;
+	background: #fb2c36; /* Background styling, including colour */
+    background-color: rgb(0, 0, 0); /* Only background colour */
 }
 ```
 
@@ -299,9 +306,19 @@ Types:
 - Named colours
 - Hexadecimal colours
 - RGB colours
-- etc.
+- HSL
 
 ### Styling Text
+
+CSS allows you to style text in various ways to enhance the appearance of your web page. Here are some common properties used to style text:
+
+- `color`: Sets the color of the text.
+- `font-weight`: Sets the weight (or boldness) of the text.
+- `font-size`: Sets the size of the text.
+- `font-family`: Sets the font of the text.
+- `text-align`: Sets the horizontal alignment of the text.
+- `text-decoration`: Adds decoration to the text, such as underline.
+- `font-style`: Sets the style of the text, such as italic.
 
 ```css
 p {
@@ -317,12 +334,35 @@ p {
 
 ### Box Model
 
-- Margin
-- Border
-- Padding
-- Content
+The box model is a fundamental concept that describes how elements are structured and displayed on a web page. It consists of four main components:
 
-### Layout Basics
+1. **Content**: The actual content of the element, such as text or images.
+2. **Padding**: The space between the content and the border. Padding is transparent and can be used to create space inside the element.
+3. **Border**: The border surrounds the padding (if any) and the content. It can be styled with different colors, widths, and styles.
+4. **Margin**: The space outside the border. Margins are transparent and can be used to create space between elements.
+
+You can use CSS properties to control each part of the box model:
+
+- `width` and `height`: Set the size of the content area.
+- `padding`: Adds space inside the element, around the content.
+- `border`: Adds a border around the padding and content.
+- `margin`: Adds space outside the border, separating the element from others.
+
+Example:
+
+```css
+div {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 10px;
+}
+```
+
+In this example, the `div` element will have a content area of 200px by 100px, 20px of padding, a 5px solid black border, and a 10px margin around it.
+
+### Layouts
 
 - Flex: <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
 - Grid: <https://css-tricks.com/snippets/css/complete-guide-grid/>
@@ -334,3 +374,122 @@ p {
 - Tailwind CSS: <https://tailwindcss.com/>
 
 ## JavaScript
+
+### What is JavaScript?
+
+JavaScript is a programming language (not the same as java) that allows you to create dynamic and interactive web content. It is an essential part of web development, alongside HTML and CSS. Built into most browsers and runs client side.
+
+### The Console
+
+The console is a tool that developers use to log information as their code runs. You can access the console in most web browsers by pressing `F12` or `Ctrl+Shift+I` (Windows) or `Cmd+Option+I` (Mac).
+
+```javascript
+console.log("Hello, World!");
+```
+
+### Variables
+Variables are used to store data that can be used and manipulated throughout your code. You can declare variables using `var`, `let`, or `const`. Variables declared with `const` cannot be changed.
+
+```javascript
+let name = "John";
+const age = 30;
+var isStudent = true;
+```
+
+### Control Flows
+Control flow statements allow you to control the execution of your code based on certain conditions.
+
+#### For Loops
+```javascript
+for (let i = 0; i < 5; i++>) {
+    console.log(i);
+}
+```
+
+#### While Loops
+```javascript
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+```
+
+#### If-Else Statements
+```javascript
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+} else {
+    console.log("Grade: F");
+}
+```
+
+#### Switch Statements
+```javascript
+switch (day) {
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        dayName = "Weekday";
+}
+
+console.log(dayName);
+```
+
+### Functions
+Functions are reusable blocks of code that perform a specific task. You can define functions using the `function` keyword or as arrow functions.
+```javascript
+// Function declaration
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+// Arrow function
+const greet = (name) => `Hello, ${name}!`;
+
+console.log(greet("Alice"));
+```
+
+### Promises
+Promises are used to handle asynchronous operations in JavaScript. They are like a guaranteed that something will happen in the future. Promises can either be pending, fulfilled, or rejected.
+
+```javascript
+let promise = new Promise((resolve, reject) => {
+    let success = true;
+
+    if (success) {
+        resolve("Operation was successful.");
+    } else {
+        reject("Operation failed.");
+    }
+});
+```
+
+Promises can perform actions based on the result of the promise.
+
+```javascript
+promise.then((message) => {
+    console.log(message);
+}).catch((error) => {
+    console.error(error);
+});
+```
+
+### Fetch API
+The Fetch API goes well with promises, fetched can return a promise that you can wait for.
+```javascript
+fetch("https://api.example.com/data")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    })
+    .catch(error => {
+        console.error("Error:", error);
+    });
+```
+
