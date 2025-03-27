@@ -84,3 +84,29 @@ img {
             font-size: 1.5rem;
       }
 }
+
+#changeName {
+      background-color: #7cb342;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px auto;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      text-align: center;
+}
+
+#changeName:hover {
+      background-color: #33691e;
+}
+
+#daysSinceRelease {
+      font-size: 1.2rem;
+      color: #5d4037;
+      text-align: center;
+      margin-top: 15px;
+      font-weight: bold;
+}

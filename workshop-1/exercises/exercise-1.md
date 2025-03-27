@@ -77,33 +77,6 @@ Create a subheading under the title and add a short description under this. Cons
   - `<description>`
 </details>
 
-<details>
-  <summary>Subheading Hint 2</summary>
-  
-  The `<h2>` tag is the most appropriate for the subheading because it is smaller than the main title `<h2>` but still indicates a heading.
-
-  The `<p>` tag is appropriate for descriptions, but not headings.
-
-  The `<span>` tag is a generic container for inline elements. Inline elements do not create a new line when placed next to other inline elements. 
-
-  The `<h1>` tag is another heading tag but bigger in the visual hierarchy (bigger font) compared to the `<h2>` tag. Not that suitable for headings that aren't the main page title. 
-
-</details>
-
-<details>
-  <summary>Description Hint 2</summary>
-  
-  The `<p>` tag is the most appropriate for the description because it is used for paragraphs. 
-
-  The `<span>` tag is a generic container for inline elements. Inline elements do not create a new line when placed next to other inline elements. 
-
-  The `<h2>` tag is another heading tag but smaller in the visual hierarchy (smaller font) compared to the `<h1>` tag. Not that suitable for non-heading content. 
-
-  The `<section>` tag defines a section in a document, such as a topic section with a heading and its corresponding paragraph content. 
-
-  The `<description>` tag doesn't exist.
-</details>
-
 ### 2. Sections
 
 Next, create sections for hobbies, skills, and one fun fact. Add a relevant image to your fun fact and list your hobbies and skills in an unordered list. Give each section a heading 2.
@@ -124,14 +97,3 @@ Create a content list with quick links to each section (hobbies, skills, and fun
   Use `<a>` tags and `<ul>` and `<li>` tags.
 </details>
 
-<details>
-  <summary>Hint 2</summary>
-
-  Look into how `<a>` tags can redirect you to specific elements on your page.
-</details>
-
-<details>
-  <summary>Hint 3</summary>
-
-  You can use element IDs to link to `<a>` tags.
-</details>
