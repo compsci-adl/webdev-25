@@ -2,4 +2,4 @@
 
 - Workshop 1: Intro to Web Dev
 - Workshop 2: Intro to React
-- Workshop 3: Intro to Express and SQLite
+- Workshop 3: Intro to Express & SQLite
